@@ -1,56 +1,96 @@
 :root {
-    --primary-color: #ffffff;
-    --secondary-color: #c0c0c0;
-    --terciary-color: #167BF7;
-    --background-color: #00030C;
-    --fonte-principal: 'Inter'
+  --primary-color: #ffffff;
+  --secondary-color: #c0c0c0;
+  --terciary-color: #167bf7;
+  --background-color: #00030c;
+  --fonte-principal: "Inter";
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--primary-color);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 400;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .principal {
-    background-image: url("../assets/img/background.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+  background-image: url("../assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  text-align: center;
 }
 
 .container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .container__botao {
-    background-color: var(--terciary-color);
-    border-radius: 5px;
-    padding: 1em;
-    color: var(--primary-color);
-    display: block;
-    text-decoration: none;
+  background-color: var(--terciary-color);
+  border-radius: 5px;
+  padding: 1em;
+  color: var(--primary-color);
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1em;
 }
 
 .botao_secundario {
-    background-color: transparent;
-    border: 2px solid var(--primary-color);
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
 }
 
 .container__aviso {
-    font-size: 12px;
-    color: var(--secondary-color)
+  font-size: 12px;
+  color: var(--secondary-color);
 }
 
 .container__title {
-    font-size: 28;
-    font-weight: 700;
+  font-size: 28;
+  font-weight: 700;
+}
+
+.container__imagem {
+  margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+  margin: 0 6em;
+}
+
+.secundario__imagem {
+  width: 80%;
+}
+
+.secundario {
+  align-items: center;
+  margin: 0 10em;
+}
+
+.descricao__titulo {
+  color: var(--primary-color);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+  color: var(--secondary-color);
+}
+
+.secundario__botao {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.container__descricao {
+  padding: 2em;
 }
