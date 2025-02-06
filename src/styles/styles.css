@@ -21,7 +21,11 @@ body {
 }
 
 .principal {
+<<<<<<< HEAD
   background-image: url("/assets/img/Background.png");
+=======
+  background-image: url("/src/assets/img/Background.png");
+>>>>>>> a66a3a3d0233f2ca3ce9aa911cb89122af7595f5
   background-repeat: no-repeat;
   background-size: contain;
   align-items: center;
